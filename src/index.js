@@ -5,9 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App appName="Application" appHeader="Welcome to React JS" appContent="This course will help you to get more solid knowledge in react js app development" />,
   document.getElementById('root')
 );
 
