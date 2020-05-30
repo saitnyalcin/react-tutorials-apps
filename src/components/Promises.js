@@ -15,16 +15,11 @@ const Promises = () => {
   }
 
   useEffect(() => {
-    let enable = true;
-    const timer = setInterval(() => {
-      if (enable) {
-        getAsycData();
-        enable = false;
-      }
-    }, 1000);
+    const timer = setInterval(() => {}, 1000);
+    getAsycData();
 
     return () => {
-      clearInterval(timer);
+      window.clearInterval(timer);
     };
   });
 
